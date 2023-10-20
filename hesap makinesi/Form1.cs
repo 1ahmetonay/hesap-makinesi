@@ -141,29 +141,6 @@
             lblsonuc.Text += "9";
         }
 
-        /*  private void btndlt_Click(object sender, EventArgs e)
-          {
-              int basamak = 0;
-              double sayi =Convert.ToDouble(lblsonuc.Text);
-
-              while (sayi!=0)
-              {
-                  sayi /= 10;
-                  ++basamak;
-              }
-              if (basamak > 0)
-              {
-                  // Label'daki metni al
-                  int boyut = basamak;
-
-                  // Son karakteri sil
-                  boyut = boyut.Remove(boyut - 1);
-
-                  // Metni label'a geri yaz
-                  lblsonuc.Text = boyut.ToString();
-              }
-          }*/
-
         private void btnmod_Click(object sender, EventArgs e)
         {
             Etemizle = true;
@@ -282,7 +259,7 @@
                 default:
                     break;
             }
-            lblsonuc.Text = Convert.ToString(sonuc);
+            lblsonuc.Text = sonuc.ToString("F3");
         }
     }
 }

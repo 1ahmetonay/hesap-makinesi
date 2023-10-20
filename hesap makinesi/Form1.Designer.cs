@@ -32,7 +32,6 @@
             btnmod = new Button();
             btnkup = new Button();
             btnac = new Button();
-            btndlt = new Button();
             btnblm = new Button();
             btnkok = new Button();
             btnkare = new Button();
@@ -86,27 +85,14 @@
             // 
             btnac.BackColor = Color.FromArgb(64, 64, 64);
             btnac.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            btnac.ForeColor = Color.FromArgb(255, 128, 0);
+            btnac.ForeColor = Color.Red;
             btnac.Location = new Point(219, 266);
             btnac.Name = "btnac";
-            btnac.Size = new Size(102, 63);
+            btnac.Size = new Size(210, 63);
             btnac.TabIndex = 3;
             btnac.Text = "AC";
             btnac.UseVisualStyleBackColor = false;
             btnac.Click += btnac_Click;
-            // 
-            // btndlt
-            // 
-            btndlt.BackColor = Color.FromArgb(64, 64, 64);
-            btndlt.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btndlt.ForeColor = Color.Red;
-            btndlt.Location = new Point(327, 266);
-            btndlt.Name = "btndlt";
-            btndlt.Size = new Size(102, 63);
-            btndlt.TabIndex = 4;
-            btndlt.Text = "DELETE";
-            btndlt.UseVisualStyleBackColor = false;
-           // btndlt.Click += btndlt_Click;
             // 
             // btnblm
             // 
@@ -404,7 +390,6 @@
             Controls.Add(btnkok);
             Controls.Add(btnkare);
             Controls.Add(btnksr);
-            Controls.Add(btndlt);
             Controls.Add(btnac);
             Controls.Add(btnkup);
             Controls.Add(btnmod);
@@ -413,6 +398,7 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Hesap Makinesi";
             ResumeLayout(false);
         }
@@ -421,7 +407,6 @@
         private Button btnmod;
         private Button btnkup;
         private Button btnac;
-        private Button btndlt;
         private Button btnblm;
         private Button btnkok;
         private Button btnkare;
