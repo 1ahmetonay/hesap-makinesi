@@ -28,8 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             btnmod = new Button();
-            btnvke = new Button();
+            btnkup = new Button();
             btnac = new Button();
             btndlt = new Button();
             btnblm = new Button();
@@ -52,13 +53,7 @@
             btnvrgl = new Button();
             btn0 = new Button();
             btneksi = new Button();
-            groupBox1 = new GroupBox();
-            textBox2 = new TextBox();
-            textBox1 = new TextBox();
-            label2 = new Label();
-            label1 = new Label();
             lblsonuc = new Label();
-            groupBox1.SuspendLayout();
             SuspendLayout();
             // 
             // btnmod
@@ -74,17 +69,18 @@
             btnmod.UseVisualStyleBackColor = false;
             btnmod.Click += btnmod_Click;
             // 
-            // btnvke
+            // btnkup
             // 
-            btnvke.BackColor = Color.FromArgb(64, 64, 64);
-            btnvke.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            btnvke.ForeColor = Color.FromArgb(255, 128, 0);
-            btnvke.Location = new Point(111, 266);
-            btnvke.Name = "btnvke";
-            btnvke.Size = new Size(102, 63);
-            btnvke.TabIndex = 2;
-            btnvke.Text = "VKE";
-            btnvke.UseVisualStyleBackColor = false;
+            btnkup.BackColor = Color.FromArgb(64, 64, 64);
+            btnkup.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            btnkup.ForeColor = Color.FromArgb(255, 128, 0);
+            btnkup.Location = new Point(111, 266);
+            btnkup.Name = "btnkup";
+            btnkup.Size = new Size(102, 63);
+            btnkup.TabIndex = 2;
+            btnkup.Text = "x³";
+            btnkup.UseVisualStyleBackColor = false;
+            btnkup.Click += btnkup_Click;
             // 
             // btnac
             // 
@@ -97,6 +93,7 @@
             btnac.TabIndex = 3;
             btnac.Text = "AC";
             btnac.UseVisualStyleBackColor = false;
+            btnac.Click += btnac_Click;
             // 
             // btndlt
             // 
@@ -109,7 +106,7 @@
             btndlt.TabIndex = 4;
             btndlt.Text = "DELETE";
             btndlt.UseVisualStyleBackColor = false;
-            btndlt.Click += btndlt_Click;
+           // btndlt.Click += btndlt_Click;
             // 
             // btnblm
             // 
@@ -122,6 +119,7 @@
             btnblm.TabIndex = 8;
             btnblm.Text = "÷";
             btnblm.UseVisualStyleBackColor = false;
+            btnblm.Click += btnblm_Click;
             // 
             // btnkok
             // 
@@ -134,6 +132,7 @@
             btnkok.TabIndex = 7;
             btnkok.Text = "√";
             btnkok.UseVisualStyleBackColor = false;
+            btnkok.Click += btnkok_Click;
             // 
             // btnkare
             // 
@@ -146,6 +145,7 @@
             btnkare.TabIndex = 6;
             btnkare.Text = "x²";
             btnkare.UseVisualStyleBackColor = false;
+            btnkare.Click += btnkare_Click;
             // 
             // btnksr
             // 
@@ -158,6 +158,7 @@
             btnksr.TabIndex = 5;
             btnksr.Text = "1/X";
             btnksr.UseVisualStyleBackColor = false;
+            btnksr.Click += btnksr_Click;
             // 
             // btncrp
             // 
@@ -170,6 +171,7 @@
             btncrp.TabIndex = 12;
             btncrp.Text = "x";
             btncrp.UseVisualStyleBackColor = false;
+            btncrp.Click += btncrp_Click;
             // 
             // btn9
             // 
@@ -221,6 +223,7 @@
             btnckr.TabIndex = 16;
             btnckr.Text = "-";
             btnckr.UseVisualStyleBackColor = false;
+            btnckr.Click += btnckr_Click;
             // 
             // btn6
             // 
@@ -272,6 +275,7 @@
             btntpl.TabIndex = 20;
             btntpl.Text = "+";
             btntpl.UseVisualStyleBackColor = false;
+            btntpl.Click += btntpl_Click;
             // 
             // btn3
             // 
@@ -323,6 +327,7 @@
             btnesit.TabIndex = 24;
             btnesit.Text = "=";
             btnesit.UseVisualStyleBackColor = false;
+            btnesit.Click += btnesit_Click;
             // 
             // btnvrgl
             // 
@@ -360,73 +365,17 @@
             btneksi.TabIndex = 21;
             btneksi.Text = "+/-";
             btneksi.UseVisualStyleBackColor = false;
-            btneksi.Click += btneksi_Click;
-            // 
-            // groupBox1
-            // 
-            groupBox1.Controls.Add(textBox2);
-            groupBox1.Controls.Add(textBox1);
-            groupBox1.Controls.Add(label2);
-            groupBox1.Controls.Add(label1);
-            groupBox1.Controls.Add(lblsonuc);
-            groupBox1.ForeColor = Color.White;
-            groupBox1.Location = new Point(3, 1);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(426, 259);
-            groupBox1.TabIndex = 25;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "İŞLEM";
-            // 
-            // textBox2
-            // 
-            textBox2.BackColor = Color.Black;
-            textBox2.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox2.ForeColor = Color.White;
-            textBox2.Location = new Point(193, 94);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(125, 43);
-            textBox2.TabIndex = 4;
-            // 
-            // textBox1
-            // 
-            textBox1.BackColor = Color.Black;
-            textBox1.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.ForeColor = Color.White;
-            textBox1.Location = new Point(193, 37);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(125, 43);
-            textBox1.TabIndex = 3;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(85, 97);
-            label2.Name = "label2";
-            label2.Size = new Size(99, 38);
-            label2.TabIndex = 2;
-            label2.Text = "SAYI 2:";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(88, 40);
-            label1.Name = "label1";
-            label1.Size = new Size(99, 38);
-            label1.TabIndex = 1;
-            label1.Text = "SAYI 1:";
             // 
             // lblsonuc
             // 
-            lblsonuc.AutoSize = true;
-            lblsonuc.Font = new Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point);
-            lblsonuc.Location = new Point(9, 175);
+            lblsonuc.BorderStyle = BorderStyle.Fixed3D;
+            lblsonuc.Font = new Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point);
+            lblsonuc.Location = new Point(3, 2);
             lblsonuc.Name = "lblsonuc";
-            lblsonuc.Size = new Size(410, 81);
-            lblsonuc.TabIndex = 0;
-            lblsonuc.Text = "0                    ";
-            lblsonuc.TextAlign = ContentAlignment.MiddleLeft;
+            lblsonuc.Size = new Size(426, 261);
+            lblsonuc.TabIndex = 25;
+            lblsonuc.Text = "0";
+            lblsonuc.TextAlign = ContentAlignment.BottomRight;
             // 
             // Form1
             // 
@@ -434,7 +383,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             ClientSize = new Size(430, 681);
-            Controls.Add(groupBox1);
+            Controls.Add(lblsonuc);
             Controls.Add(btnesit);
             Controls.Add(btnvrgl);
             Controls.Add(btn0);
@@ -457,19 +406,20 @@
             Controls.Add(btnksr);
             Controls.Add(btndlt);
             Controls.Add(btnac);
-            Controls.Add(btnvke);
+            Controls.Add(btnkup);
             Controls.Add(btnmod);
             ForeColor = Color.Transparent;
+            FormBorderStyle = FormBorderStyle.Fixed3D;
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
             Name = "Form1";
             Text = "Hesap Makinesi";
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
             ResumeLayout(false);
         }
 
         #endregion
         private Button btnmod;
-        private Button btnvke;
+        private Button btnkup;
         private Button btnac;
         private Button btndlt;
         private Button btnblm;
@@ -492,11 +442,6 @@
         private Button btnvrgl;
         private Button btn0;
         private Button btneksi;
-        private GroupBox groupBox1;
         private Label lblsonuc;
-        private Label label1;
-        private Label label2;
-        private TextBox textBox2;
-        private TextBox textBox1;
     }
 }
