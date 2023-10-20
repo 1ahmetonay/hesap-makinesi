@@ -246,7 +246,20 @@
                     sonuc = ilk_sayi * ilk_sayi * ilk_sayi; break;
 
                 case 'k':
-                    Console.WriteLine("{0}/{1}", ilk_sayi.ToString("F2"), ikinci_sayi.ToString("F2"));
+
+                    double sayi = Convert.ToDouble(lblsonuc.Text);
+                    if (sayi != 0)
+                    {
+                        // Sayının tersini al
+                        double tersSayi = 1 / sayi;
+
+                        // Sayıyı "1/x" formatında yazdır
+                        sonuc = tersSayi;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Sıfırın tersi tanımsızdır.");
+                    }
                     break;
 
                 case '2':
